@@ -8,11 +8,11 @@
 	import { sleep } from '🍎/helpers/sleep';
 
 	let hidden_splash_screen = $state(false);
-	let progress_val = tweened(100, { duration: 3000, easing: quintInOut });
+	let progress_val = tweened(100, { duration: 1000, easing: quintInOut });
 
 	onMount(async () => {
 		$progress_val = 0;
-		await sleep(3000);
+		await sleep(1000);
 		hidden_splash_screen = true;
 	});
 </script>
